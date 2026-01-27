@@ -13,7 +13,7 @@ public class SystemZarzadzaniaMultikinem {
 
 		if (login == 1) {
 			kupnoBiletuKlient klinet = new kupnoBiletuKlient();
-			zarzadzanieKontemUzytkownika konto = new zarzadzanieKontemUzytkownika();
+			zarzadzanieKontemUzytkownika konto = new zarzadzanieKontemUzytkownika(modelKina);
 			przegladRepertuaru repertuar = new przegladRepertuaru();
 			filtrujFilmy filtruj = new filtrujFilmy();
 			dodajBiletDoKoszyka koszyk = new dodajBiletDoKoszyka();

@@ -1,6 +1,10 @@
 public class zarzadzanieKontemUzytkownika {
 	private int _uzytkownikID;
-	private IModelKina model = new Model();
+	private IModelKina model;
+
+	public zarzadzanieKontemUzytkownika(IModelKina model) {
+		this.model = model;
+	}
 
 	public void zarzadzanieKontemUzytkownika(int opcja, String uzytkownikID, String[] noweDane) {
 		if(opcja == 1){
