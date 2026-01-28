@@ -27,6 +27,9 @@ class zarzadzanieKontemUzytkownikaTest {
         String userId = "15";
         String[] noweDane = {"Anna", "Maria"};
 
+        doNothing().when(model).aktualizujDaneUzytkownika(anyString(), any(String[].class));
+        doNothing().when(model).zarejestrowanieZdarzenia(anyString());
+
         //when
         zarzadzanie.zarzadzanieKontemUzytkownika(opcja, userId, noweDane);
 
